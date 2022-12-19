@@ -24,7 +24,7 @@ public:
     float temp;
     int humidity;
     float windspeed;
-    int weatherType;
+    int typeOfTheWeather;
 
     Weather() {
         day = 0;
@@ -33,7 +33,7 @@ public:
         temp = 0;
         humidity = 0;
         windspeed = 0;
-        weatherType = NONE;
+        typeOfTheWeather = NONE;
     }
 
     Weather(int day, string city, string country, float temp, int humidity, float windspeed, type a) {
@@ -43,7 +43,7 @@ public:
         this->temp = temp;
         this->humidity = humidity;
         this->windspeed = windspeed;
-        this->weatherType = a;
+        this->typeOfTheWeather= a;
     }
 
     ~Weather() {
@@ -54,7 +54,7 @@ public:
     
 
     void isLvivWeather() {
-        if (humidity >= 80 && weatherType == RAINY) {
+        if (humidity >= 80 && typeOfTheWeather == RAINY) {
             cout << "Typical weather in Lviv" << endl;
         }
         else {
