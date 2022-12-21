@@ -6,7 +6,7 @@
 
 using namespace std;
 
-enum type {
+enum type WeatherType {
     FOGGY,
     SUNNY,
     CLOUDY,
@@ -47,12 +47,9 @@ public:
     }
 
     ~Weather() {
-
     }
-
     void Print();
     
-
     void isLvivWeather() {
         if (humidity >= 80 && typeOfTheWeather == RAINY) {
             cout << "Typical weather in Lviv" << endl;
@@ -73,8 +70,7 @@ public:
         allDaysOfWeather.push_back(WeatherItem);
         return allDaysOfWeather;
     }
-
-
+    
     float findMaxTemprature(int randomDay) {
         float maxTemp = 0;
         int daysFound = 0;
@@ -92,7 +88,7 @@ public:
         if (daysFound == 0) {
             cout << "NOT ENOUGH DATA";
         }
-
+        
         return maxTemp;
 
     }
