@@ -62,9 +62,7 @@ public:
 class WeatherCalendar {
 public:
     Weather WeatherItem;
-
     vector <Weather> allDaysOfWeather;
-
     vector <Weather> addWeatherItem(Weather WeatherItem) {
         allDaysOfWeather.push_back(WeatherItem);
         return allDaysOfWeather;
@@ -103,12 +101,9 @@ public:
             }
         }
     }
-
-    void PrintVector() {
+     void PrintVector() {
         for (int i = 0; i < allDaysOfWeather.size(); i++) {
             cout << allDaysOfWeather[i].day << endl;
         }
     }
-
-
 };
