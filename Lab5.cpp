@@ -32,11 +32,4 @@ int main() {
     Calendar.PrintVector();
     cout << "\nThe highest temperature " << Calendar.findMaxTemprature(5) << endl;
     cout << "\nThe highest temperature " << Calendar.findMaxTemprature(3) << endl;
-  
-
-
-
-
-
-
-}
+ }
