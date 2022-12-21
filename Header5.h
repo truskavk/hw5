@@ -14,9 +14,7 @@ enum type WeatherType {
      NONE
 };
 
-
 class Weather {
-
 public:
     int day;
     string city;
@@ -48,6 +46,7 @@ public:
 
     ~Weather() {
     }
+    
     void Print();
     
     void isLvivWeather() {
