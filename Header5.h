@@ -71,26 +71,22 @@ public:
     float findMaxTemprature(int randomDay) {
         float maxTemp = 0;
         int daysFound = 0;
-
         for (int i = 0; i < allDaysOfWeather.size(); i++) {
-
             if (allDaysOfWeather[i].day == randomDay) {
                 daysFound = 1;
                 if (allDaysOfWeather[i].temp > maxTemp) {
                     maxTemp = allDaysOfWeather[i].temp;
                 }
             }
-
         }
         if (daysFound == 0) {
             cout << "NOT ENOUGH DATA";
         }
         
         return maxTemp;
-
-    }
-    void bubbleSort()
-    {
+        }
+        
+    void bubbleSort() {
         int i, j;
         for (i = 0; i < allDaysOfWeather.size() - 1; i++) {
 
