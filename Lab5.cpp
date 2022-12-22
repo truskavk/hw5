@@ -13,7 +13,7 @@ void Weather::Print() {
     cout << "Temperature: " << temp << endl;
     cout << "Humidity: " << humidity << endl;
     cout << "Windspeed: " << windspeed << endl;
-    cout << "Type: " << weatherType << endl;
+    cout << "Type: " << typeOfTheWeather << endl;
 }
 int main() {
     Weather day1(5, "Chernivtsi", "Ukraine", 2, 70, 6, SUNNY);
