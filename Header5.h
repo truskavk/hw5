@@ -89,8 +89,7 @@ public:
     void bubbleSort() {
         int i, j;
         for (i = 0; i < allDaysOfWeather.size() - 1; i++) {
-
-            for (j = 0; j < allDaysOfWeather.size() - i - 1; j++) {
+        for (j = 0; j < allDaysOfWeather.size() - i - 1; j++) {
                 if (allDaysOfWeather[j].day > allDaysOfWeather[j + 1].day) {
                     swap(allDaysOfWeather[j], allDaysOfWeather[j + 1]);
                 }
