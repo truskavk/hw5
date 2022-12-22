@@ -6,7 +6,7 @@
 
 using namespace std;
 
-enum type WeatherType {
+enum type {
     FOGGY,
     SUNNY,
     CLOUDY,
