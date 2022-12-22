@@ -6,7 +6,7 @@
 
 using namespace std;
 
-enum type {
+enum weather_type {
     FOGGY,
     SUNNY,
     CLOUDY,
@@ -34,7 +34,7 @@ public:
         typeOfTheWeather = NONE;
     }
 
-    Weather(int day, string city, string country, float temp, int humidity, float windspeed, type a) {
+    Weather(int day, string city, string country, float temp, int humidity, float windspeed, weather_type a) {
         this->day = day;
         this->city = city;
         this->country = country;
